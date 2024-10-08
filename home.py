@@ -347,7 +347,7 @@ def projects():
         </a>
     </div>
     """, unsafe_allow_html=True)
-    st write(" Web-app coming soon...")
+    st.write(" Web-app coming soon...")
     st.markdown('<div class="spacer"></div>', unsafe_allow_html=True)
 
     
