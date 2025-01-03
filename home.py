@@ -350,16 +350,75 @@ def projects():
     st.markdown("<h3 style='text-align: center;'>Web-app coming soon...</h1>", unsafe_allow_html=True)
     st.markdown('<div class="spacer"></div>', unsafe_allow_html=True)
 
-    
     # Third Project
+    st.markdown("""
+        ### Multimodal RAG chatbot for teacher assistance with Gradio Interface
+    """)
+
+    # Image for the second project
+    st.image("multimodal_project.png", width=600, caption="Multimodal RAG chatbot")
+
+    # Highlights section for the second project
+    st.markdown("""
+    #### Highlights:
+    - Multimodal Search System: Integrates text and image embeddings using HuggingFace and CLIP models for advanced text-to-image and text-to-text search capabilities.
+    - Robust PDF Processing: Utilizes PyMuPDF to extract and process text and images, handling transparency and color spaces
+    - Tailored Education Assistance:Provides personalized responses for specific students, enabling teachers to create tailored lesson plans, study guides, and task assignments.
+    - Retrieval-Augmented Generation (RAG): Integrates ChromaDB to retrieve relevant contextual information, enhancing response relevance and accuracy.
+    - LLama Vision: Uses LLaMA 3.2 Vision model to generate high quality context aware responses for both text and image querys to assist teachers in their daily tasks.
+    - Gradio Interface: Offers an intuitive and user-friendly interface for teachers to interact with the chatbot, allowing teachers to select the student and input queries.
+    - Customizable & Scalable: Designed with modularity and scalability in mind, enabling easy customization and extension for future enhancements.
+    """)
+
+    # Tags section for the second project
+    st.markdown("##### Tags:")
+    st.markdown("""
+    <div class="tags-container">
+        <span class="tags">Flask</span>
+        <span class="tags">Solara</span>
+        <span class="tags">Machine Learning</span>
+        <span class="tags">MLflow</span>
+        <span class="tags">SHAP</span>
+        <span class="tags">MLOps</span>
+        <span class="tags">API Development</span>
+        <span class="tags">Docker</span>
+        <span class="tags">Python</span>
+    </div>
+    """, unsafe_allow_html=True)
+    # Read More / Read Less for the third project
+    st.markdown("""
+    <div>
+        <input type="checkbox" id="toggle-2">
+        <div class="content-wrapper-2">
+            <p>
+            While working as a personal tutor I always wnated to help my students the most, that is why I had the idea to build a multimodal RAG system. The Multimodal RAG Chatbot is an AI-powered tool designed to assist teachers in creating personalized learning experiences for students. It combines ChromaDB for context retrieval, using a chunking logic based on a RollingWindowSplitter that maintains semantic coherence without splitting sentences, ensuring precise and efficient retrieval of information. Paired with Ollama’s LLaMA Vision model, the chatbot generates multimodal responses to both text and image queries. With a user-friendly Gradio interface, teachers can interact seamlessly by selecting specific students and receiving responses tailored to their strengths, weaknesses, and learning needs. By integrating advanced retrieval logic, multimodal capabilities, and scalable design,this demo-rpoject showcases the potential of AI in education.
+            </p>
+        </div>
+        <label for="toggle-2"><span></span></label>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+    st.markdown("#### Explore More:")
+    
+    # Create the button container using HTML
+    st.markdown("""
+    <div class="button-container">
+        <a href="https://github.com/uvezero/multimodal-rag-teacher-assistant" target="_blank">
+            <div class="button">GitHub Repo</div>
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Fourth Project
     st.markdown("""
         ### Machine Learning Tools for biocatalysis
     """)
 
-    # Image for the third project
+    # Image for the fourth project
     st.image("Protein_RASA1_PDB_1wer.png", width=600, caption="Customer Churn Prediction System")
 
-    # Highlights section for the second project
+    # Highlights section for the fourth project
     st.markdown("""
     #### Highlights:
     - Investigated new features and developed a new dataset that improved model accuracy and predictive performance
