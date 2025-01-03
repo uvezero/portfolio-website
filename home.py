@@ -139,6 +139,25 @@ def projects():
         content: "Read Less";
     }
     
+     /* Fourth Project Read More/Read Less */
+    .content-wrapper-4 {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    input[type="checkbox"]#toggle-4 {
+        display: none;
+    }
+
+    input[type="checkbox"]#toggle-4:checked ~ .content-wrapper-4 {
+        max-height: 500px; /* Adjust this value if the text is longer */
+    }
+
+    input[type="checkbox"]#toggle-4:checked ~ label span::before {
+        content: "Read Less";
+    }
+    
     /* Third Project Read More/Read Less */
     .content-wrapper-3 {
         max-height: 0;
@@ -374,27 +393,26 @@ def projects():
     st.markdown("##### Tags:")
     st.markdown("""
     <div class="tags-container">
-        <span class="tags">Flask</span>
-        <span class="tags">Solara</span>
+        <span class="tags">Chromadb</span>
+        <span class="tags">LLM</span>
         <span class="tags">Machine Learning</span>
-        <span class="tags">MLflow</span>
-        <span class="tags">SHAP</span>
-        <span class="tags">MLOps</span>
-        <span class="tags">API Development</span>
-        <span class="tags">Docker</span>
+        <span class="tags">Gradio</span>
+        <span class="tags">Chromadb</span>
+        <span class="tags">Ollama</span>
+        <span class="tags">NLP Development</span>
         <span class="tags">Python</span>
     </div>
     """, unsafe_allow_html=True)
     # Read More / Read Less for the third project
     st.markdown("""
     <div>
-        <input type="checkbox" id="toggle-2">
-        <div class="content-wrapper-2">
+        <input type="checkbox" id="toggle-4">
+        <div class="content-wrapper-4">
             <p>
             While working as a personal tutor I always wnated to help my students the most, that is why I had the idea to build a multimodal RAG system. The Multimodal RAG Chatbot is an AI-powered tool designed to assist teachers in creating personalized learning experiences for students. It combines ChromaDB for context retrieval, using a chunking logic based on a RollingWindowSplitter that maintains semantic coherence without splitting sentences, ensuring precise and efficient retrieval of information. Paired with Ollama’s LLaMA Vision model, the chatbot generates multimodal responses to both text and image queries. With a user-friendly Gradio interface, teachers can interact seamlessly by selecting specific students and receiving responses tailored to their strengths, weaknesses, and learning needs. By integrating advanced retrieval logic, multimodal capabilities, and scalable design,this demo-rpoject showcases the potential of AI in education.
             </p>
         </div>
-        <label for="toggle-2"><span></span></label>
+        <label for="toggle-4"><span></span></label>
     </div>
     """, unsafe_allow_html=True)
 
