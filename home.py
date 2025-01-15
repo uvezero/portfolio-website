@@ -57,10 +57,8 @@ def home():
     # Social Icons
     social_icons_data = {
         "LinkedIn": ["https://www.linkedin.com/in/lopez-rios", "https://cdn-icons-png.flaticon.com/512/174/174857.png"],
-        "GitHub": ["https://github.com/uvezero", "https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg"],
-        "Twitter": ["https://x.com/juanlrios22", "https://cdn-icons-png.flaticon.com/512/733/733579.png"],
-        "Medium": ["https://medium.com/@juanlopezriosdecastro", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Medium_logo_Monogram.svg/1200px-Medium_logo_Monogram.svg.png"]
-    }
+        "GitHub": ["https://github.com/uvezero", "https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg"]
+        }
 
     social_icons_html = [f"<a href='{social_icons_data[platform][0]}' target='_blank' style='margin-right: 10px;'><img class='social-icon' src='{social_icons_data[platform][1]}' alt='{platform}' width='30'></a>" for platform in social_icons_data]
 
@@ -434,7 +432,7 @@ def projects():
     """)
 
     # Image for the fourth project
-    st.image("Protein_RASA1_PDB_1wer.png", width=600, caption="Customer Churn Prediction System")
+    st.image("Protein_RASA1_PDB_1wer.png", width=600, caption="Protein RASA1")
 
     # Highlights section for the fourth project
     st.markdown("""
@@ -483,12 +481,11 @@ def projects():
     # Create the button container using HTML
     st.markdown("""
     <div class="button-container">
-        <a href="https://github.com/your-repo-link" target="_blank">
+        <a href="https://github.com/uvezero/ml-tools-biocatalysis-UCL" target="_blank">
             <div class="button">GitHub Repo</div>
         </a>
     </div>
     """, unsafe_allow_html=True)
-    st.markdown("<h3 style='text-align: center;'>Git repo coming soon...</h1>", unsafe_allow_html=True)
 
 
 
@@ -501,7 +498,6 @@ def contacts():
     st.write("""
         - 📧 Email: juanlopezriosdecastro@gmail.com
         - 📱 LinkedIn: [Connect with me](https://www.linkedin.com/in/lopez-rios)
-        - 🐦 Twitter: [Follow me on Twitter](https://x.com/juanlrios22)
     """)
 
 # Render the page content based on the selected menu option
