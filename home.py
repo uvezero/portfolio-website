@@ -70,9 +70,10 @@ def home():
     # About me section
     st.subheader("About Me")
     st.write("""
-    - 🧑‍💻 I am a **MSci Theoretical Physics graduate from UCL**
+    - 💼 I am working as a **Research Assitant** at **UPF** investigating LLMs for drug discovery.
+    - 🧑‍💻 **MSci Theoretical Physics graduate from UCL**. 
     - 🛩️ prev: ML Intern at [Encord](https://encord.com/author/juan-lopez-rios-de-castro/), built AI-powered chatbot and worked on SAM model improvements.
-    - ❤️ I am passionate about **Machine Learning/Deep Learning, MLOps, Data, Computer Vision**.
+    - ❤️ I am passionate about **Machine Learning/Deep Learning for scientific discovery.**.
     - 🎬 Also love cinema and writing reviews about TV shows or films.
     - 📫 How to reach me: juanlopezriosdecastro@gmail.com
     - 🏠 London/Madrid
